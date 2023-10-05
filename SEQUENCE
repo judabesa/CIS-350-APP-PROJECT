@@ -1,0 +1,34 @@
+# Sequence Diagram: Choose a Space to Declutter and Get Guidance
+
+- `User` -> `Cleanly App`: 
+  - **Action**: `login()`
+  
+- `Cleanly App` -> `User`: 
+  - **Action**: `displaySpaces()`
+  
+- `User` -> `Cleanly App`: 
+  - **Action**: `selectSpace(spaceID)`
+  
+- `Cleanly App` -> `Space`: 
+  - **Action**: `fetchSpaceDetails(spaceID)`
+  
+- `Space` -> `Cleanly App`: 
+  - **Action**: `returnSpaceDetails(details)`
+  
+- `Cleanly App` -> `Space`: 
+  - **Action**: `requestGuidance(details)`
+  
+- `Space` (type: PhysicalSpace or DigitalSpace) -> `Cleanly App`: 
+  - **Action**: `provideGuidance(guidance)`
+  
+- `Cleanly App` -> `User`: 
+  - **Action**: `displayGuidance(guidance)`
+  
+- `User`: 
+  - **Action**: Follow the provided guidance to declutter.
+  
+- `User` -> `Cleanly App`: 
+  - **Action**: `confirmDecluttering()`
+  
+- `Cleanly App` -> `Space`: 
+  - **Action**: `updateLastCleanedDate(date)`
