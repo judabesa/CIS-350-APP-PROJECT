@@ -1,0 +1,31 @@
+# Use Case for Cleanly
+
+## Use Case:
+Choose a space to declutter and get guidance.
+
+## Overview:
+This use case details the process by which a user chooses a particular space (physical or digital) to declutter and subsequently receives guidance on how to best organize and clean that space. The guidance is tailored to the type of space and its current state.
+
+## Actors:
+- **User**: A registered user of the Cleanly app.
+- **Digital Workspace**: Represents platforms like Windows, MacOS, Cloud where digital decluttering takes place.
+- **Physical Items**: Represents tangible items within a physical space.
+
+## Pre Conditions:
+- The user must be registered and logged into the Cleanly app.
+- The user has at least one space (physical or digital) added to their profile.
+
+## Main Success Scenario:
+1. User logs into the Cleanly app.
+2. User navigates to the 'Choose a Space' section.
+3. The app displays a list of spaces (rooms, digital platforms) associated with the user.
+4. User selects a space they wish to declutter.
+5. Based on the space's type and current state, the app provides tailored decluttering guidance.
+6. User follows the guidance, decluttering their space step by step.
+7. User confirms completion, and the app updates the space's "last cleaned" date.
+
+## Post Conditions:
+- The user's chosen space is organized and decluttered.
+- The space's status is updated in the app.
+- The user gains a sense of achievement and is motivated to maintain or declutter other spaces.
+
