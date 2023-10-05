@@ -1,0 +1,55 @@
+Class Diagram for Cleanly
+Class: User
+
+Attributes:
+
+    UserID: Integer
+    Name: String
+    Email: String
+    Password: String
+    Rooms: List
+    DigitalWorkspaces: List
+
+Operations:
+
+    Register(): void
+    Login(): void
+    ChooseSpace(): Space
+    SetReminder(): void
+    ShareProgress(): void
+
+Class: Space
+
+Attributes:
+
+    SpaceID: Integer
+    Size: Float
+    Items: List
+    DateLastCleaned: Date
+
+Operations:
+
+    GetGuidance(): String
+    TrackProgress(): void
+
+Class: PhysicalSpace (Inherits from Space)
+
+Attributes:
+
+    RoomType: String
+
+Operations:
+
+    AddItem(): void
+    RemoveItem(): void
+
+Class: DigitalSpace (Inherits from Space)
+
+Attributes:
+
+    PlatformType: String
+
+Operations:
+
+    IdentifyClutter(): List
+    OrganizeFiles(): void
